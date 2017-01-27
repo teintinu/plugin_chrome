@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "DoctorZ inject",
+    "description": "Teste de injetar Javascript",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "https://doctorz.com.br/*"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "css": [
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "img/*.png"
+    ]
+}
